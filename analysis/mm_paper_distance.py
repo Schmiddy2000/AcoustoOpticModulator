@@ -14,3 +14,10 @@ We can then do a linear regression, or rather an ODR, since we expect to have fa
 We can then use the parameters obtained to write a function that can turn the measurements measured with neglection 
 of the tilt into corrected values with corresponding uncertainties.  
 """
+
+d_values = np.array([])
+
+d = 47.5
+h = 2.5
+
+print(4200 * (np.sqrt(d**2 + h**2) / d - 1))
